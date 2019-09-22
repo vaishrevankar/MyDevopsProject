@@ -1,1 +1,10 @@
 language: java
+jdk : 
+os : windows
+jobs:
+  include:
+  - stage: test
+      script: ./test 
+    - stage: deploy
+      script: ./deploy
+  
